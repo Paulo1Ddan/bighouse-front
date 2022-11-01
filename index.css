@@ -1,0 +1,313 @@
+/* Reset Global */
+* {
+  font-weight: 100;
+  font-weight: 200;
+  box-sizing: border-box;
+  margin: 0;
+  padding: 0;
+}
+
+*::after,
+::before {
+  box-sizing: border-box;
+}
+
+li {
+  list-style: none;
+}
+
+a {
+  text-decoration: none;
+}
+
+nav {
+  background-color: rgba(18, 238, 18, 0.4)
+}
+
+hr {
+  width: 35px;
+  height: 5px;
+}
+
+/* Variaveis de ambiente global */
+:root {
+  --white: #ffffff;
+  --blue: #004cfcbe;
+  --green: #59ad0a;
+  --gray: #bceed3;
+  --dark: #222222;
+  --yellow: #eeff00;
+  --max-width-desktop: 1080px;
+  --min-width-desktop: 892px;
+  --min-height-galeria: 261px;
+}
+
+img {
+  object-fit: cover; 
+}
+
+.esconder {
+  visibility: hidden;
+}
+
+.deletar_box {
+  display: none;
+}
+
+.bg_home {
+  background-image: url("./src/img/bg_rio.jpg");
+  background-repeat: no-repeat;
+  background-size: cover;
+  position: fixed;
+  z-index: -1;
+  width: 100%;
+  height: 100%;
+  top: 0px;
+}
+
+.linha {
+  color: var(--yellow);
+  background-color: var(--yellow);
+  border: 2px solid var(--yellow);
+  margin-left: auto;
+  margin-right: auto;
+  max-width: 115px;
+}
+
+.sobre-nos {
+  background-color: rgba(9, 24, 8, 0.5);
+  border: 1px solid rgba(132, 232, 123, .7);
+  border-radius: 5px;
+}
+
+#navbarPrincipal>ul>li>a {
+  color: white;
+}
+
+#container-logo-icone {
+  min-height: 276px;
+}
+
+#logo-bordas {
+  display: flex;
+  align-items: center;
+  justify-content: center;
+}
+
+#logo-marca {
+  font-size: large;
+}
+
+#menu_checkin>form>ul>li>select {
+  border: 1px solid rgb(139 138 138 / 50%);
+  margin: 2px 0px;
+  padding: 2px 0px;
+}
+
+#menu_checkin>form>ul>li>input[type=date] {
+  border: 1px solid rgba(51, 51, 44, 0.5);
+}
+
+#menu_checkin>form>ul>li>select {
+  border: 1px solid rgb(139 138 138 / 50%);
+}
+
+#root_footer {
+  margin: 13% 0;
+}
+
+/* Template Mobile */
+@media only screen and (max-width: 746px) {
+
+  /* Checkin Checkout */
+  div#menu_checkin>form>ul {
+    display: flex;
+    flex-direction: column;
+    justify-content: center;
+  }
+
+  div#menu_checkin>form>ul>li {
+    border: 1px solid dotted;
+    text-align: center;
+  }
+
+  #checkout {
+    width: 100%;
+  }
+
+  #checkin {
+    width: 100%;
+  }
+
+  #adultos-select {
+    width: 100%;
+  }
+
+  #crianca-select {
+    width: 100%;
+  }
+
+  .foto-galeria-pequena {
+    width: 100%;
+  }
+
+  #img_sobre {
+    display: flex;
+    justify-content: center;
+  }
+
+  #img_sobre>img {
+    width: 100%;
+  }
+
+  #sobre_footer {
+    margin-top: 115px;
+  }
+
+  #subscribe_footer>form>div>button {
+    margin-bottom: 15px;
+  }
+
+}
+
+/* Template Desktop */
+@media only screen and (min-width: 767px) {
+
+  /* Header */
+  #desc_galeria>div {
+    min-height: 333px;
+  }
+
+  #menu_checkin>form {
+    margin-top: 233px;
+    width: 100%;
+  }
+
+  #menu_checkin>form>ul {
+    display: flex;
+    list-style-type: none;
+    justify-content: center;
+  }
+
+  form.align-items-center {
+    max-width: var(--max-width-desktop);
+    margin-left: auto;
+    margin-right: auto;
+  }
+
+  .li-flex-data-check {
+    flex-grow: 8;
+    align-self: center;
+  }
+
+  .li-flex-num-check {
+    flex-grow: 2;
+    align-self: center;
+  }
+
+  .input-check {
+    min-width: 233px;
+    min-height: 28px;
+  }
+
+  .li-flex-num-check>select {
+    min-width: 52px;
+  }
+
+  /* Main */
+  main#section_main {
+    min-width: var(--min-width-desktop);
+    max-width: var(--max-width-desktop);
+    margin-left: auto;
+    margin-right: auto;
+  }
+
+  .bg_color_fotos {
+    background-color: var(--green);
+  }
+
+  .container_flex {
+    display: flex;
+    flex-direction: row;
+  }
+
+  .container_flex_reverse {
+    display: flex;
+    flex-direction: row-reverse;
+  }
+
+  img.foto-galeria-larga {
+    min-width: 649px;
+    min-height: var(--min-height-galeria);
+    object-fit: cover;
+  }
+
+  .flex_item_img>img.foto-galeria-pequena {
+    min-width: 431px;
+    max-height: 261px;
+    object-fit: cover;
+  }
+
+  .flex_item_desc {
+    width: 100%;
+    min-width: var(--min-height-galeria);
+  }
+
+  .foto-galeria-pequena {
+    max-width: 330px;
+    object-fit: cover;
+  }
+
+  #mapa {
+    min-height: 269px;
+    text-align: center;
+  }
+
+  #text_map>p {
+    padding-top: 55px;
+    padding-left: 10%;
+    padding-right: 10%;
+    padding-bottom: 0;
+  }
+
+  #desc_sobre {
+    max-height: 355px;
+  }
+
+  /* Fim da main */
+
+  /* Reserva */
+  .quartos {
+    display: flex;
+  }
+
+  .quartos>.coluna-1 {
+  
+  }
+  
+  .quartos>.coluna-2 {
+    width: 70%;
+  }
+
+  .quartos>div>figure {
+    max-width: 383px;
+  }
+  
+  .mais-info-img {
+    position: absolute; 
+    left: auto;
+    right: auto;
+  }
+    
+  /* Footer */
+  footer#root_footer {
+    display: flex;
+    flex-direction: row;
+    width: 100%;
+  }
+
+  footer#root_footer>.footer-flex {
+    flex-basis: 655px;
+    min-height: 333px;
+  }
+}

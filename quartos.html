@@ -1,0 +1,351 @@
+<!doctype html>
+<html lang="en">
+
+<head>
+    <meta charset="utf-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1">
+    <title>Reserva| BigHouse </title>
+    <!-- BOOTSTRAP CDN-->
+    <link href="https://cdn.jsdelivr.net/npm/bootstrap@5.2.2/dist/css/bootstrap.min.css" rel="stylesheet"
+        integrity="sha384-Zenh87qX5JnK2Jl0vWa8Ck2rdkQ2Bzep5IDxbcnCeuOxjzrPF/et3URy9Bv1WTRi" crossorigin="anonymous">
+    <!-- Google Font: Source Sans Pro CDN -->
+    <link rel="stylesheet"
+        href="https://fonts.googleapis.com/css?family=Source+Sans+Pro:300,400,400i,700&display=fallback">
+    <!-- Desenvolvimento Local Estilos -->
+    <link rel="stylesheet" href="index.css">
+    <link rel="stylesheet" href="src/icons/font-awesome-4.7.0/css/font-awesome.min.css">
+
+<body>
+    <header id="section_header" class="width-home">
+        <!-- Menu navegação -->
+        <nav class="navbar navbar-expand-lg">
+            <button class="navbar-toggler" type="button" data-bs-toggle="collapse" data-bs-target="#navbarPrincipal"
+                aria-controls="navbarPrincipal" aria-expanded="false" aria-label="Toggle navigation">
+                <span class="navbar-toggler-icon"></span>
+            </button>
+            <div class="collapse navbar-collapse" id="navbarPrincipal">
+                <ul class="navbar-nav m-auto mb-2 mb-lg-0">
+                    <li class="nav-item">
+                        <a class="nav-link active" aria-current="page" href="./index.html">Home</a>
+                    </li>
+                    <li class="nav-item">
+                        <a class="nav-link" href="./contato.html">Contato</a>
+                    </li>
+                    <li class="nav-item">
+                        <a class="nav-link" href="./index.html">Sobre</a>
+                    </li>
+                    <li class="nav-item btn_reserva">
+                        <a id="btn_reserva" class="nav-link" href="./reserva.html">Reservas</a>
+                    </li>
+                </ul>
+            </div>
+        </nav>
+        <!-- Fim Menu navegação -->
+
+        <!-- Logo Marca -->
+        <div class="bg_home">
+            <div id="container-logo-icone" class="text-light text-center">
+                <div class="pt-5">
+                    <div id="logo-bordas">
+                        <div id="logo-borda-left">
+                            <img src="./src/img/borda-logo.png" alt="borda esquerda não encontrada">
+                        </div>
+                        <div style="align-self: center" id="logo-marca" class="p-4">RGWEB3</div>
+                        <div id="logo-borda-right"><img src="./src/img/borda-logo.png"
+                                alt="borda direita nao encontrada"></div>
+                    </div>
+                    <div id="headline-logo">
+                        <p class="fs-1">Bem-vindo ao Rio</p>
+                    </div>
+                </div>
+            </div>
+            <!-- Fim Logo Marca -->
+    </header>
+
+    <!-- Checkin Checkout | Reserva -->
+    <div id="menu_checkin" class="mb-5 text-center">
+        <form class="align-items-center bg bg-light pt-1 pb-0">
+            <hr class="text-center w-100" />
+            <div class="text-center fs-3 ">
+                <h3 class="opacity-50">Nossas Acomodações</h3>
+            </div>
+            <hr class="text-center w-100" />
+            <ul class="container-fluid p-0 m-0">
+                <li id="checkout" class="li-flex-data-check">
+                    <label for="checkin">Check-in</label>
+                    <div class="separador"></div>
+                    <input class="input-check" type="date" id="checkin" name="checkin">
+                </li>
+                <li id="checkout" class="li-flex-data-check">
+                    <label for="checkout">Check-out</label>
+                    <div class="separador"></div>
+                    <input class="input-check" type="date" id="checkout">
+                </li>
+                <li id="adulto" class="li-flex-num-check">
+                    <label for="adultos-select">Adultos</label>
+                    <div class="separador"></div>
+                    <select name="adultos" id="adultos-select">
+                        <option selected>0</option>
+                        <option value="1">1</option>
+                        <option value="2">2</option>
+                        <option value="3">3</option>
+                    </select>
+                </li>
+                <li id="crianca" class="li-flex-num-check">
+                    <label for="crianca-select">Crianças</label>
+                    <div class="separador"></div>
+                    <select name="crianca" id="crianca-select">
+                        <option selected>0</option>
+                        <option value="1">1</option>
+                        <option value="2">2</option>
+                        <option value="3">3</option>
+                    </select>
+                </li>
+                <li id="reserva_enviar">
+                    <label for="pesquisar"></label>
+                    <div class="separador"></div>
+                    <a href="#" class="btn btn-outline-warning m-5">
+                        <span id="pesquisar_reserva" class="">Pesquisar</span>
+                    </a>
+                </li>
+            </ul>
+        </form>
+    </div>
+    <!-- Final Checkin | Checkout -->
+
+    <!--Reserva Main -->
+    <main id="section_main" class="width-home">
+        <!-- Suites -->
+        <div class="quartos bg bg-light mt-0">
+            <div class="colula-1 p-2">
+                <figure class="w-100">
+                    <img src="./src/img/slide/img3.jpg" class="card-img-top rounded-0" alt="Imagem não encontrada">
+                    <span class="mais-info-img">
+                        <a href="#" class="text-light mais-info"><strong>Mais informações</strong></a>
+                    </span>
+                </figure>
+                <div class="p-2 text-center">
+                    <h4>Descrição</h4>
+                    <p>lorem impsum.....</p>
+                </div>
+            </div>
+            <div class="coluna-2 w-100 p-2">
+                <a href="" class="text-dark w-100">
+                    <h1 class="fs-3 opacity-75 m-3 mb-0">Suíte Júnior</h1>
+                </a>
+                <p class="p-3">
+                    Nossas Suítes Júnior oferecem vistas panorâmicas da cidade de tirar o fôlego.
+                <ul class="text-center" style="list-style-type: circle;">
+                    <li>
+                        Tamanho: 260 ft²
+                    </li>
+                    <li>
+                        Camas: 2 Casal
+                    </li>
+                </ul>
+                </p>
+                <div class="d-flex justify-content-center">
+                    <hr class="text-center w-75" />
+                </div>
+                <div class="text-center">
+                    <i class="fa fs-1 fa-facebook-square" aria-hidden="true"></i>
+                    <i class="fa fs-1 fa-facebook-square" aria-hidden="true"></i>
+                    <i class="fa fs-1 fa-facebook-square" aria-hidden="true"></i>
+                    <i class="fa fs-1 fa-facebook-square" aria-hidden="true"></i>
+                    <i class="fa fs-1 fa-facebook-square" aria-hidden="true"></i>
+                    <i class="fa fs-1 fa-facebook-square" aria-hidden="true"></i>
+                    <i class="fa fs-1 fa-facebook-square" aria-hidden="true"></i>
+                </div>
+            </div>
+            <div class="coluna-1 text-center p-5">
+                <a href="" class="fs-4 w-100 text-dark m-3 mt-5">
+                    <strong>Checkout</strong>
+                </a>
+                <div class="mt-5">
+                    <span style="display: block;">A partir de:</span>
+                    <a href="#" class="btn btn-warning rounded-0 mb-5 ">
+                        <p class="text-light"><strong>Mais<br>informações</strong></p>
+                    </a>
+                </div>
+            </div>
+        </div>
+
+        <div class="quartos bg bg-light mt-0">
+            <div class="colula-1 p-2">
+                <figure class="w-100">
+                    <img src="./src/img/slide/img3.jpg" class="card-img-top rounded-0" alt="Imagem não encontrada">
+                    <span class="mais-info-img">
+                        <a href="#" class="text-light mais-info"><strong>Mais informações</strong></a>
+                    </span>
+                </figure>
+                <div class="p-2 text-center">
+                    <h4>Descrição</h4>
+                    <p>lorem impsum.....</p>
+                </div>
+            </div>
+            <div class="coluna-2 w-100 p-2">
+                <a href="" class="text-dark w-100">
+                    <h1 class="fs-3 opacity-75 m-3 mb-0">Suíte Júnior</h1>
+                </a>
+                <p class="p-3">
+                    Nossas Suítes Júnior oferecem vistas panorâmicas da cidade de tirar o fôlego.
+                <ul class="text-center" style="list-style-type: circle;">
+                    <li>
+                        Tamanho: 260 ft²
+                    </li>
+                    <li>
+                        Camas: 2 Casal
+                    </li>
+                </ul>
+                </p>
+                <div class="d-flex justify-content-center">
+                    <hr class="text-center w-75" />
+                </div>
+                <div class="text-center">
+                    <i class="fa fs-1 fa-facebook-square" aria-hidden="true"></i>
+                    <i class="fa fs-1 fa-facebook-square" aria-hidden="true"></i>
+                    <i class="fa fs-1 fa-facebook-square" aria-hidden="true"></i>
+                    <i class="fa fs-1 fa-facebook-square" aria-hidden="true"></i>
+                    <i class="fa fs-1 fa-facebook-square" aria-hidden="true"></i>
+                    <i class="fa fs-1 fa-facebook-square" aria-hidden="true"></i>
+                    <i class="fa fs-1 fa-facebook-square" aria-hidden="true"></i>
+                </div>
+            </div>
+            <div class="coluna-1 text-center p-5">
+                <a href="" class="fs-4 w-100 text-dark m-3 mt-5">
+                    <strong>Checkout</strong>
+                </a>
+                <div class="mt-5">
+                    <span style="display: block;">A partir de:</span>
+                    <a href="#" class="btn btn-warning rounded-0 mb-5 ">
+                        <p class="text-light"><strong>Mais<br>informações</strong></p>
+                    </a>
+                </div>
+            </div>
+        </div>
+
+        <div class="quartos bg bg-light mt-0">
+            <div class="colula-1 p-2">
+                <figure class="w-100">
+                    <img src="./src/img/slide/img3.jpg" class="card-img-top rounded-0" alt="Imagem não encontrada">
+                    <span class="mais-info-img">
+                        <a href="#" class="text-light mais-info"><strong>Mais informações</strong></a>
+                    </span>
+                </figure>
+                <div class="p-2 text-center">
+                    <h4>Descrição</h4>
+                    <p>lorem impsum.....</p>
+                </div>
+            </div>
+            <div class="coluna-2 w-100 p-2">
+                <a href="" class="text-dark w-100">
+                    <h1 class="fs-3 opacity-75 m-3 mb-0">Suíte Júnior</h1>
+                </a>
+                <p class="p-3">
+                    Nossas Suítes Júnior oferecem vistas panorâmicas da cidade de tirar o fôlego.
+                <ul class="text-center" style="list-style-type: circle;">
+                    <li>
+                        Tamanho: 260 ft²
+                    </li>
+                    <li>
+                        Camas: 2 Casal
+                    </li>
+                </ul>
+                </p>
+                <div class="d-flex justify-content-center">
+                    <hr class="text-center w-75" />
+                </div>
+                <div class="text-center">
+                    <i class="fa fs-1 fa-facebook-square" aria-hidden="true"></i>
+                    <i class="fa fs-1 fa-facebook-square" aria-hidden="true"></i>
+                    <i class="fa fs-1 fa-facebook-square" aria-hidden="true"></i>
+                    <i class="fa fs-1 fa-facebook-square" aria-hidden="true"></i>
+                    <i class="fa fs-1 fa-facebook-square" aria-hidden="true"></i>
+                    <i class="fa fs-1 fa-facebook-square" aria-hidden="true"></i>
+                    <i class="fa fs-1 fa-facebook-square" aria-hidden="true"></i>
+                </div>
+            </div>
+            <div class="coluna-1 text-center p-5">
+                <a href="" class="fs-4 w-100 text-dark m-3 mt-5">
+                    <strong>Checkout</strong>
+                </a>
+                <div class="mt-5">
+                    <span style="display: block;">A partir de:</span>
+                    <a href="#" class="btn btn-warning rounded-0 mb-5 ">
+                        <p class="text-light"><strong>Mais<br>informações</strong></p>
+                    </a>
+                </div>
+            </div>
+        </div>
+        <!-- Final Suites -->
+    </main>
+    <!-- Fim Reserva Main -->
+
+    <!-- footer -->
+    <footer id="root_footer" class="bg-light">
+        <!-- footer sobre -->
+        <div id="sobre_footer" class="footer-flex text-center">
+            <div><span>Sobre</span></div>
+            <hr class="linha border bg-dark border-dark" />
+            <span>
+                <p>
+                    Fale com a gente! Quer saber mais sobre o apê, sobre o Rio? Mande um email que nos respondemos!
+                    Email: info@seusite.com
+                </p>
+            </span>
+        </div>
+        <!-- end footer sobre -->
+        <!-- Redes sociais -->
+        <div id="social_footer" class="footer-flex text-center">
+            <div class="container  pt-0 pb-0">
+                <div class="mt-5"><span>Redes Sociais</span></div>
+                <hr class="linha border bg-warning border-warning" />
+            </div>
+            <div>
+                <ul class="d-flex">
+                    <li class="container">
+                        <a class="text-dark" href="#">
+                            <i class="fa fa-facebook-square" aria-hidden="true"></i>
+                        </a>
+                    </li>
+                    <li class="container">
+                        <a class="text-dark" href="#">
+                            <i class="fa fa-instagram" aria-hidden="true">
+                            </i>
+                        </a>
+                    </li>
+                    <li class="container">
+                        <a class="text-dark" href="#">
+                            <i class="fa fa-youtube-play" aria-hidden="true"></i>
+                        </a>
+                    </li>
+                </ul>
+            </div>
+        </div>
+        <!-- End Redes sociais -->
+        <!-- News letter -->
+        <div id="subscribe_footer" class="footer-flex">
+            <div class="text-center mt-5">
+                <span>Receba nossas Novidades</span>
+                <hr class="linha border bg-warning border-warning" />
+            </div>
+            <form>
+                <div class="text-center">
+                    <input style="border-radius: 0px;" class="form-control mt-2" type="email"
+                        placeholder="Entre com seu e-mail">
+                    <button class="btn btn-warning mt-2 w-75 rounded-0 border-dark">Enviar</button>
+                </div>
+            </form>
+            <!-- End News letter-->
+        </div>
+    </footer>
+
+    <!-- SCRIPT REQUIRED -->
+    <script src="https://cdn.jsdelivr.net/npm/bootstrap@5.2.2/dist/js/bootstrap.bundle.min.js"
+        integrity="sha384-OERcA2EqjJCMA+/3y+gxIOqMEjwtxJY7qPCqsdltbNJuaOe923+mo//f6V8Qbsw3"
+        crossorigin="anonymous"></script>
+    <script src="./src/js/reserva.js"></script>
+    </head>
+</body>
+
+</html>
