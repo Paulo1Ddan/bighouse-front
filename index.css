@@ -273,6 +273,12 @@ img {
   #desc_sobre {
     max-height: 355px;
   }
+  
+  #desc_sobre img{
+    height: 355px;
+    width: 350px;
+    object-fit: cover;
+  }
 
   /* Fim da main */
 
