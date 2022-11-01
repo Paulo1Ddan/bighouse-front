@@ -286,6 +286,12 @@ img {
   .quartos {
     display: flex;
   }
+  
+  .quartos img{
+    object-fit: cover;
+    width: 280px;
+    height: 280px;
+  }
 
   .quartos>.coluna-1 {
   
