@@ -94,9 +94,7 @@ header .navlist{
   background-size: cover;
   background-position: center;
   background-attachment: fixed;
-  height: 400px; 
-  margin-bottom: 600px;
-
+  height: 400px;
 }
 .container-reserva{
   display: flex;
@@ -138,7 +136,83 @@ header .navlist{
   
 }
 
-@media  screen and (max-width: 768px) {
+.contato{
+  margin-top: 30px;
+  padding: 10px;
+}
+.contato .txt-contato{
+  margin-top: 10px;
+  font-size: 1.2rem;
+  text-align: center;
+}
+.frm-contato .input-txt{
+  max-width: 1000px;
+  width: 100%;
+  margin: 10px auto;
+}
+.frm-contato .input-txt input{
+  width: 100%;
+  padding: 2px;
+  outline: none;
+  border: 2px solid rgba(0, 0, 0, 0.4);
+  border-radius: 5px;
+}
+.frm-contato .input-txt input:focus{
+  border-color: #29995F;
+}
+.frm-contato .input-txt textarea{
+  width: 100%;
+  height: 100px;
+  padding: 2px;
+  outline: none;
+  border: 2px solid rgba(0, 0, 0, 0.4);
+  border-radius: 5px;
+}
+.frm-contato .input-txt textarea:focus{
+  border-color: #29995F;
+}
+.frm-contato .input-btn{
+  max-width: 1000px;
+  width: 100%;
+  margin: 10px auto;
+  display: flex;
+  justify-content: center;
+}
+
+.frm-contato .input-btn button{
+  width: 150px;
+  height: 50px;
+  border: none;
+  border-radius: 5px;
+  background-color: #29995F;
+  color: #fff;
+  font-size: 1.2rem;
+  font-weight: bold;
+}
+.frm-contato .input-btn button:active{
+  background-color: #237149;
+}
+
+footer{
+  background-color:  rgb(228, 228, 120);
+  height: 60px;
+}
+footer .container-footer{
+  display: flex;
+  align-items: center;
+  justify-content: center;
+  height: 100%;
+  padding: 10px;
+}
+footer .container-footer p{
+  margin: 0;
+  font-weight: bold;
+  text-align: center;
+  font-size: 1.4rem;
+}
+
+
+@media screen and (max-width: 768px) {
   .container-sobre{
     flex-direction: column;
   }
@@ -161,6 +235,24 @@ header .navlist{
   }
   .container-parador-pasedag p{
     width: 100%;
+  }
+}
+
+@media screen and (max-width: 600px){
+  footer .container-footer p{
+    margin: 0;
+    font-weight: bold;
+    text-align: center;
+    font-size: 1.2rem;
+  }
+}
+
+@media screen and (max-width: 420px){
+  footer .container-footer p{
+    margin: 0;
+    font-weight: bold;
+    text-align: center;
+    font-size: 1.1rem;
   }
 }
 

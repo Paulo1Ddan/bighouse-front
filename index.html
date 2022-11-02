@@ -25,10 +25,10 @@
               <a class="nav-link active" txt-color="white" aria-current="page" href="/">Home</a>
             </li>
             <li class="nav-item">
-              <a class="nav-link" txt-color="white" aria-current="page" href="/reserva.html">Reserva</a>
+              <a class="nav-link" txt-color="white" aria-current="page" href="#reserva">Reserva</a>
             </li>
             <li class="nav-item">
-              <a class="nav-link" txt-color="white" aria-current="page" href="/contato.html">Contato</a>
+              <a class="nav-link" txt-color="white" aria-current="page" href="#contato">Contato</a>
             </li>
           </ul>
         </div>
@@ -80,7 +80,7 @@
   </section>
 
   <!-- Reserva -->
-  <section class="reserva">
+  <section class="reserva" id="reserva">
     <div class="container-reserva padrao-site">
       <h3>Faça sua reserva</h3>
       <h5>A partir de R$350</h5>
@@ -89,11 +89,43 @@
   </section>
 
   <!-- Contato -->
-  
+  <section class="contato padrao-site" id="contato">
+    <div class="container-titulo">
+      <h3>Contato</h3>
+      <div class="underline"></div>
+    </div>
+    <div class="txt-contato">
+      <p>Caso tenha dúvidas, entre em contato conosco</p>
+    </div>
+    <form action="/contact" method="post" class="frm-contato">
+      <div class="input-txt">
+        <input type="text" name="namecontact" placeholder="Seu nome" id="">
+      </div>
+      <div class="input-txt">
+        <input type="email" name="emailcontact" placeholder="Seu e-mail" id="">
+      </div>
+      <div class="input-txt">
+        <input type="tel" name="telcontact" placeholder="Seu telefone" id="">
+      </div>
+      <div class="input-txt">
+        <textarea name="msgcontact" placeholder="Sua mensagem"></textarea>
+      </div>
+      <div class="input-btn">
+        <button class="btn-submit" type="submit">Enviar</button>
+      </div>
+    </form>
+    <div class="container-contato">
 
+    </div>
+  </section>
+
+  <footer>
+    <div class="container-footer padrao-site">
+      <p>&copy Parador Pasedag. Todos os direitos reservados, 2022</p>
+    </div>
+  </footer>
 </body>
-
-
+</html>
 <script src="https://cdn.jsdelivr.net/npm/bootstrap@5.2.2/dist/js/bootstrap.bundle.min.js" integrity="sha384-OERcA2EqjJCMA+/3y+gxIOqMEjwtxJY7qPCqsdltbNJuaOe923+mo//f6V8Qbsw3" crossorigin="anonymous"></script>
 <script src="https://code.jquery.com/jquery-3.6.1.min.js" integrity="sha256-o88AwQnZB+VDvE9tvIXrMQaPlFFSUTR+nldQm1LuPXQ=" crossorigin="anonymous"></script>
 <script src="https://kit.fontawesome.com/a9f506c8dd.js" crossorigin="anonymous"></script>
@@ -101,4 +133,3 @@
 <script>
   AOS.init();
 </script>
-</html>
