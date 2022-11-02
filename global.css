@@ -1,0 +1,43 @@
+/* Reset */
+*{
+    margin: 0;
+    padding: 0;
+    box-sizing: border-box;
+}
+h1, h2, h3, h4, h5, h6{
+    margin: 0;
+    padding: 0;
+
+}
+
+hr{
+    margin: 15px 0 !important;
+}
+
+body{
+    min-height: 100vh;
+}
+
+[bg-color="green"]{
+    background-color: #34A853;
+}
+[txt-color="white"]{
+    color: #fff !important;
+} 
+
+.padrao-site{
+    max-width: 1400px;
+    width: 100%;
+    margin: 0 auto;
+}
+.container-titulo{
+    margin: 0 auto;
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+}
+.container-titulo .underline{
+    height: 5px;
+    width: 50px;
+    background-color: rgb(245, 245, 147);
+}

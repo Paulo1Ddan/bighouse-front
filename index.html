@@ -1,312 +1,104 @@
-<!doctype html>
-<html lang="en">
-
+<!DOCTYPE html>
+<html lang="pt-br">
 <head>
-  <meta charset="utf-8">
-  <meta name="viewport" content="width=device-width, initial-scale=1">
-  <title>Home | BigHouse </title>
-  <!-- BOOTSTRAP CDN-->
-  <link href="https://cdn.jsdelivr.net/npm/bootstrap@5.2.2/dist/css/bootstrap.min.css" rel="stylesheet"
-    integrity="sha384-Zenh87qX5JnK2Jl0vWa8Ck2rdkQ2Bzep5IDxbcnCeuOxjzrPF/et3URy9Bv1WTRi" crossorigin="anonymous">
-  <!-- Google Font: Source Sans Pro CDN -->
-  <link rel="stylesheet"
-    href="https://fonts.googleapis.com/css?family=Source+Sans+Pro:300,400,400i,700&display=fallback">
-  <!-- Desenvolvimento Local Estilos -->
-  <link rel="stylesheet" href="index.css">
-  <link rel="stylesheet" href="src/icons/font-awesome-4.7.0/css/font-awesome.min.css">
-</head>
+  <meta charset="UTF-8">
+  <meta http-equiv="X-UA-Compatible" content="IE=edge">
+  <meta name="viewport" content="width=device-width, initial-scale=1.0">
+  <link href="https://cdn.jsdelivr.net/npm/bootstrap@5.2.2/dist/css/bootstrap.min.css" rel="stylesheet" integrity="sha384-Zenh87qX5JnK2Jl0vWa8Ck2rdkQ2Bzep5IDxbcnCeuOxjzrPF/et3URy9Bv1WTRi" crossorigin="anonymous">
+  <link href="https://unpkg.com/aos@2.3.1/dist/aos.css" rel="stylesheet">
+  <link rel="stylesheet" href="./global.css">
+  <link rel="stylesheet" href="./index.css">
+  <title>Bem Vindo ao Parador Pasedag</title>
 
+</head>
 <body>
-  <header id="section_header" class="width-home">
-    <!-- Menu navegação -->
-    <nav class="navbar navbar-expand-lg">
-      <button class="navbar-toggler" type="button" data-bs-toggle="collapse" data-bs-target="#navbarPrincipal"
-        aria-controls="navbarPrincipal" aria-expanded="false" aria-label="Toggle navigation">
-        <span class="navbar-toggler-icon"></span>
-      </button>
-      <div class="collapse navbar-collapse" id="navbarPrincipal">
-        <ul class="navbar-nav m-auto mb-2 mb-lg-0">
-          <li class="nav-item">
-            <a class="nav-link active" aria-current="page" href="#">Home</a>
-          </li>
-          <li class="nav-item">
-            <a class="nav-link" href="./contato.html">Contato</a>
-          </li>
-          <li class="nav-item">
-            <a class="nav-link" href="#desc_sobre">Sobre</a>
-          </li>
-          <li class="nav-item btn_reserva">
-            <a id="btn_reserva" class="nav-link" href="./quartos.html">Reservas</a>
-          </li>
-        </ul>
+  <header>
+    <nav class="navbar navbar-expand-lg" bg-color="green">
+      <div class="container-fluid" >
+        <a class="navbar-brand" style="font-weight: bold;" txt-color="white" href="#">Parador Pasedag</a>
+        <button class="navbar-toggler" type="button" data-bs-toggle="collapse" data-bs-target="#navbarSupportedContent" aria-controls="navbarSupportedContent" aria-expanded="false" aria-label="Toggle navigation">
+          <span class="navbar-toggler-icon"></span>
+        </button>
+        <div class="collapse navbar-collapse" style="text-align: center;" id="navbarSupportedContent">
+          <ul class="navbar-nav navlist me-auto mb-2 mb-lg-0">
+            <li class="nav-item">
+              <a class="nav-link active" txt-color="white" aria-current="page" href="/">Home</a>
+            </li>
+            <li class="nav-item">
+              <a class="nav-link" txt-color="white" aria-current="page" href="/reserva.html">Reserva</a>
+            </li>
+            <li class="nav-item">
+              <a class="nav-link" txt-color="white" aria-current="page" href="/contato.html">Contato</a>
+            </li>
+          </ul>
+        </div>
       </div>
     </nav>
-    <!-- Fim Menu navegação -->
-
-    <!-- Logo Marca -->
-    <div class="bg_home">
-      <div id="container-logo-icone" class="text-light text-center">
-        <div class="pt-5">
-          <div id="logo-bordas">
-            <div id="logo-borda-left">
-              <img src="./src/img/borda-logo.png" alt="borda esquerda não encontrada">
-            </div>
-            <div style="align-self: center" id="logo-marca" class="p-4">RGWEB3</div>
-            <div id="logo-borda-right"><img src="./src/img/borda-logo.png" alt="borda direita nao encontrada"></div>
-          </div>
-          <div id="headline-logo">
-            <p class="fs-1">Bem-vindo ao Rio</p>
-          </div>
-        </div>
-      </div>
-      <!-- Fim Logo Marca -->
   </header>
-  </div>
 
-  <!-- Checkin Checkout | Reserva -->
-  <div id="menu_checkin" class="mb-5 text-center">
-    <form class="align-items-center bg bg-light pt-1 pb-0">
-      <ul class="container-fluid p-0 m-0">
-        <li id="checkout" class="li-flex-data-check">
-          <label for="checkin">Check-in</label>
-          <div class="separador"></div>
-          <input class="input-check" type="date" id="checkin" name="checkin">
-        </li>
-        <li id="checkout" class="li-flex-data-check">
-          <label for="checkout">Check-out</label>
-          <div class="separador"></div>
-          <input class="input-check" type="date" id="checkout">
-        </li>
-        <li id="adulto" class="li-flex-num-check">
-          <label for="adultos-select">Adultos</label>
-          <div class="separador"></div>
-          <select name="adultos" id="adultos-select">
-            <option selected>0</option>
-            <option value="1">1</option>
-            <option value="2">2</option>
-            <option value="3">3</option>
-          </select>
-        </li>
-        <li id="crianca" class="li-flex-num-check">
-          <label for="crianca-select">Crianças</label>
-          <div class="separador"></div>
-          <select name="crianca" id="crianca-select">
-            <option selected>0</option>
-            <option value="1">1</option>
-            <option value="2">2</option>
-            <option value="3">3</option>
-          </select>
-        </li>
-        <li id="reserva_enviar">
-          <label for="pesquisar"></label>
-          <div class="separador"></div>
-          <a href="#" class="btn btn-outline-success m-5">
-            <span id="pesquisar_reserva" class="">Pesquisar</span>
-          </a>
-        </li>
-      </ul>
-    </form>
-  </div>
-  <!-- Final Checkin | Checkout -->
-
-  <!-- Galeria de fotos-->
-  <main id="section_main" class="width-home">
-    <section id="section_galeria" class="mt-5">
-      <div id="desc_galeria" class="bg bg-light">
-        <!-- Box para ajustar o texto -->
-        <div>
-          <div id="pined_header_galeria">
-            <p class="h4 pt-5 text-center">
-              Sinta-se em <span>casa longe de casa</span>
-              <hr class="linha border bg-warning border-warning" />
-            </p>
-          </div>
-          <div>
-            <p class="text-center m-5 mt-0  pt-0">
-              <span>
-                Aproveite seus dias na Cidade Maravilhosa! Hospede-se no nosso lindo apartamento, ao lado da
-                praia
-                de Ipanema e a minutos de cafés e bares badalados.
-              </span>
-            </p>
-          </div>
-        </div>
-      </div>
-      <div class="bg bg-white mt-5" style="align-self: center">
-        <div class="container_flex_reverse text-center bg_color_fotos">
-          <div class="flex_item_img  ">
-            <img class="foto-galeria-larga img-fluid" src="./src/img/sala_hotel.jpg"
-              alt="Imagem da sala não encontrada">
-          </div>
-          <div style="align-self: center" class="flex_item_desc text-center p-3">
-            <span class="fs-3">O Apartamento</span>
-            <hr class="linha border bg-warning border-warning" />
-          </div>
-        </div>
-        <div class="container_flex text-center">
-          <div class="flex_item_img">
-            <img class="foto-galeria-pequena" src="./src/img/quarto_hotel.jpg" alt="Imagem do quarto não encontrada">
-          </div>
-          <div class="flex_item_desc p-3">
-            <div class="fs-3">Conheça nossos quartos!</div>
-            <hr class="linha border bg-warning border-warning" />
-            <p class="pt-2">Lorem Ipsum is simply dummy text of the printing and typesetting industry. Lorem
-              Ipsum
-              has been the industry's standard dummy text ever since the 1500s</p>
-            <div class="pt-2 mt-5">
-              <span>
-                <a style="color: var(--blue); text-decoration: none;" class="link-info" href="#">Reserve Já</a>
-              </span>
-            </div>
-          </div>
-        </div>
-      </div>
-    </section>
-
-    <section class="bg bg-white mt-5" style="align-self: center">
-      <div class="container_flex_reverse text-center bg_color_fotos">
-        <div class="flex_item_img">
-          <img class="foto-galeria-larga img-fluid" src="./src/img/local_hotel.jpg"
-            alt="Imagem da sala não encontrada" />
-        </div>
-        <div style="align-self: center;" class="flex_item_desc text-center">
-          <div class="container">
-            <span class="fs-3">Localização</span>
-            <hr class="linha border bg-warning border-warning" />
-          </div>
-        </div>
-      </div>
-    </section>
-
-    <!-- Mapa -->
-    <section id="mapa" class="container-fluid bg-light mt-5">
-      <div id="text_map">
-        <p>Nosso apartamento fica em Ipanema, super perto do Leblon.
-          A minutos da praia, o entorno oferece tudo que você precisa para aproveitar seu tempo no Rio:
-          restaurantes, bares, lojas charmosas, quiosques de sucos naturais e muito mais.</p>
-      </div>
-      <div class="text-center" style="margin-bottom: auto"><a hre="#" class="btn link-info">Ver Mapa</a></div>
-    </section>
-    <!-- Fim mapa -->
-
-    <!-- Descrição sobre -->
-    <div id="desc_sobre" class="container_flex bg_color_fotos mt-5">
-      <div id="img_sobre">
-        <img src="./src/img/desc_sobre.jpg" alt="Imagem não encontrada">
-      </div>
-      <div class="container" style="color: white">
-        <h2 class="f-4 mt-3">Sobre Nós</h2>
-        <hr class="linha" style="margin-left: 0; max-width: 44px; border: 1.5px solid orange">
-        <div id="desc" class=" mt-0 mb-0">
-          <p class="sobre-nos p-4">Lorem Ipsum is simply dummy text of the printing and typesetting
-            industry. Lorem Ipsum has been the industry's standard dummy text ever since the 1500s, when an
-            unknown printer took a galley of type and scrambled it to make a type specimen book.
-            It has survived not only five centuries, but also the leap into electronic typesetting, remaining
-            essentially unchanged.</p>
-        </div>
-      </div>
+  <!-- Banner -->
+  <section class="banner" id="banner">
+    <div class="padrao-site container-banner">
+      <h1 txt-color="white">Bem vindo à Florianópolis</h1>
     </div>
-    <!-- Final Descrição sobre -->
-  </main>
+  </section>
 
-  <footer id="root_footer" class="bg-light">
-    <!-- footer sobre -->
-    <div id="sobre_footer" class="footer-flex text-center">
-      <div class="mt-5"><span>Sobre</span></div>
-      <hr class="linha border bg-warning border-warning" />
-      <span>
-        <p>
-          Fale com a gente! Quer saber mais sobre o apê, sobre o Rio? Mande um email que nos respondemos!
-          Email: info@seusite.com
-        </p>
-      </span>
+  <!-- Sobre -->
+  <section class="sobre padrao-site" data-aos="fade-up" data-aos-duration="2500" id="sobre">
+    <div class="container-titulo">
+      <h3>Sobre Nós</h3>
+      <div class="underline"></div>
     </div>
-    <!-- end footer sobre -->
-    <!-- Redes sociais -->
-    <div id="social_footer" class="footer-flex text-center">
-      <div class="container  pt-0 pb-0">
-        <div class="mt-5"><span>Redes Sociais</span></div>
-        <hr class="linha border bg-warning border-warning" />
-      </div>
-      <div>
-        <ul class="d-flex">
-          <li class="container">
-            <a class="text-dark" href="#">
-              <i class="fa fa-facebook-square" aria-hidden="true"></i>
-            </a>
-          </li>
-          <li class="container">
-            <a class="text-dark" href="#">
-              <i class="fa fa-instagram" aria-hidden="true">
-              </i>
-            </a>
-          </li>
-          <li class="container">
-            <a class="text-dark" href="#">
-              <i class="fa fa-youtube-play" aria-hidden="true"></i>
-            </a>
-          </li>
-        </ul>
-      </div>
+    <div class="container-sobre">
+      <img src="./src/img/sobre/desc_sobre.jpg" alt="Descrição Sobre" title="Descrição Sobre">
+      <p>Lorem ipsum dolor, sit amet consectetur adipisicing elit. Tenetur consequuntur pariatur sed asperiores, excepturi, et quod maiores quia, vel odio provident animi sit eius. Perspiciatis deserunt cum fugiat explicabo harum. Lorem, ipsum dolor sit amet consectetur adipisicing elit. Dicta ipsa magni consectetur fugiat error adipisci suscipit quis animi, esse, veniam repudiandae quae quasi veritatis? Ipsa nulla natus quod aperiam ut. Lorem ipsum dolor sit, amet consectetur adipisicing elit. Quam fuga voluptatum quidem enim ipsam facilis perspiciatis? Praesentium labore quia voluptatum officia quidem amet debitis velit vero culpa. Pariatur, natus ratione.</p>
     </div>
-    <!-- End Redes sociais -->
-    <!-- News letter -->
-    <div id="subscribe_footer" class="footer-flex">
-      <div class="text-center mt-5">
-        <span>Receba nossas Novidades</span>
-        <hr class="linha border bg-warning border-warning" />
-      </div>
-      <form>
-        <div class="text-center">
-          <input style="border-radius: 0px;" class="form-control mt-2" type="email" placeholder="Entre com seu e-mail">
-          <button class="btn btn-warning mt-2 w-75 rounded-0 border-dark">Enviar</button>
-        </div>
-      </form>
-      <!-- End News letter-->
+  </section>
+
+  <!-- Parador Pasedag -->
+  <section class="parador-pasedag padrao-site" data-aos="fade-up" data-aos-duration="2500">
+    <div class="container-titulo">
+      <h3>Parador Pasedag</h3>
+      <div class="underline"></div>
     </div>
-  </footer>
+    <div class="container-parador-pasedag">
+      <p>Lorem ipsum dolor, sit amet consectetur adipisicing elit. Tenetur consequuntur pariatur sed asperiores, excepturi, et quod maiores quia, vel odio provident animi sit eius. Perspiciatis deserunt cum fugiat explicabo harum. Lorem, ipsum dolor sit amet consectetur adipisicing elit. Dicta ipsa magni consectetur fugiat error adipisci suscipit quis animi, esse, veniam repudiandae quae quasi veritatis? Ipsa nulla natus quod aperiam ut. Lorem ipsum dolor sit, amet consectetur adipisicing elit. Quam fuga voluptatum quidem enim ipsam facilis perspiciatis? Praesentium labore quia voluptatum officia quidem amet debitis velit vero culpa. Pariatur, natus ratione.</p>
+      <img src="./src/img/sobre/parador-pasedag.jpg" alt="Descrição Sobre" title="Descrição Sobre">
+    </div>
+  </section>
 
-  <!-- Assinatura do criador -->
-  <div id="criador-frontend"></div>
-  <script>
-    let dados = {
-      nome: 'RGWEB3',
-      data: () => {
-        let d = new Date();
-        let data = d.getDay() + '-' + d.getDate() + '-' + d.getFullYear();
-        return data;
-      },
-      ano: () => {
-        let a = new Date();
-        let ano = a.getFullYear();
-        return ano;
-      }
-    }
+  <!-- Localização -->
+  <section class="location padrao-site" data-aos="fade-up" data-aos-duration="2500">
+    <div class="container-titulo">
+      <h3>Localização</h3>
+      <div class="underline"></div>
+    </div>
+    <div class="container-location">
+      <p>Estamos localizados na Rua Servidão Ireno Luiz Martins, 39 - Ingleses Sul, Florianópolis - SC, 88058-600</p>
+      <iframe src="https://www.google.com/maps/embed?pb=!1m18!1m12!1m3!1d885.2437737023021!2d-48.38984330499499!3d-27.43888689170214!2m3!1f0!2f0!3f0!3m2!1i1024!2i768!4f13.1!3m3!1m2!1s0x95276a02d8c2d63d%3A0x81c8460281d9baa6!2sServid%C3%A3o%20Ireno%20Luiz%20Martins%2C%2039%20-%20Ingleses%20Sul%2C%20Florian%C3%B3polis%20-%20SC%2C%2088058-600!5e0!3m2!1spt-BR!2sbr!4v1667347032673!5m2!1spt-BR!2sbr" width="600" height="450" style="border:0;" allowfullscreen="" loading="lazy" referrerpolicy="no-referrer-when-downgrade"></iframe>
+    </div>
+  </section>
 
-    let ano = dados.ano()
-    let footer = document.getElementById("criador-frontend");
-    let assinatura = document.createElement('div');
+  <!-- Reserva -->
+  <section class="reserva">
+    <div class="container-reserva padrao-site">
+      <h3>Faça sua reserva</h3>
+      <h5>A partir de R$350</h5>
+      <a target="_blank" href="https://api.whatsapp.com/send?phone=5511930546947&text=Olá, Gostaria de realizar uma reserva" class="btn-reserva"><i class="fa-brands fa-whatsapp fa-light"></i>Reservar</a>
+    </div>
+  </section>
 
-    footer.appendChild(assinatura);
-    assinatura.className = `
-      bg-warning 
-      border border-dark rounded
-      text-center
-      p-1 mt-1
-      rounded-0
-    `;
+  <!-- Contato -->
+  
 
-    assinatura.innerHTML = '<span>Powered By: <span>'
-      + dados.nome
-      + ' com ❤ 2022 - 10 - 30 '
-      + ano; 
-  </script>
-  <!-- Fim assinatura do criador -->
-
-  <!-- SCRIPT REQUIRED -->
-  <script src="https://cdn.jsdelivr.net/npm/bootstrap@5.2.2/dist/js/bootstrap.bundle.min.js"
-    integrity="sha384-OERcA2EqjJCMA+/3y+gxIOqMEjwtxJY7qPCqsdltbNJuaOe923+mo//f6V8Qbsw3"
-    crossorigin="anonymous"></script>
 </body>
 
+
+<script src="https://cdn.jsdelivr.net/npm/bootstrap@5.2.2/dist/js/bootstrap.bundle.min.js" integrity="sha384-OERcA2EqjJCMA+/3y+gxIOqMEjwtxJY7qPCqsdltbNJuaOe923+mo//f6V8Qbsw3" crossorigin="anonymous"></script>
+<script src="https://code.jquery.com/jquery-3.6.1.min.js" integrity="sha256-o88AwQnZB+VDvE9tvIXrMQaPlFFSUTR+nldQm1LuPXQ=" crossorigin="anonymous"></script>
+<script src="https://kit.fontawesome.com/a9f506c8dd.js" crossorigin="anonymous"></script>
+<script src="https://unpkg.com/aos@2.3.1/dist/aos.js"></script>
+<script>
+  AOS.init();
+</script>
 </html>
