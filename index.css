@@ -41,8 +41,8 @@ header .navlist{
   margin-top: 30px;
 }
 .container-sobre img{
-  width: 360px;
-  height: 360px;
+  width: 300px;
+  height: 300px;
   object-fit: cover;
 }
 .container-sobre p{
@@ -136,3 +136,28 @@ header .navlist{
   
 }
 
+@media  screen and (max-width: 768px) {
+  .container-sobre{
+    flex-direction: column;
+  }
+  .container-sobre img{
+    width: 100%;
+    height: 300px;
+    object-fit: cover;
+  }
+  .container-sobre p{
+    width: 100%;
+  }
+
+  .container-parador-pasedag{
+    flex-direction: column-reverse;
+  }
+  .container-parador-pasedag img{
+    width: 100%;
+    height: 300px;
+    object-fit: cover;
+  }
+  .container-parador-pasedag p{
+    width: 100%;
+  }
+}
